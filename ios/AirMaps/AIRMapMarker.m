@@ -89,6 +89,7 @@ NSInteger const AIR_CALLOUT_OPEN_ZINDEX_BASELINE = 999;
 
         _pinView.draggable = self.draggable;
         _pinView.layer.zPosition = self.zIndex;
+        _pinView.selected = YES;
 
         // TODO(lmr): Looks like this API was introduces in iOS 8. We may want to handle differently for earlier
         // versions. Right now it's just leaving it with the default color. People needing the colors are free to

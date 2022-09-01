@@ -813,6 +813,7 @@ RCT_EXPORT_METHOD(getAddressFromCoordinates:(nonnull NSNumber *)reactTag
 - (void)mapView:(AIRMap *)mapView didDeselectAnnotationView:(MKAnnotationView *)view {
     if ([view.annotation isKindOfClass:[AIRMapMarker class]]) {
         [(AIRMapMarker *)view.annotation hideCalloutView];
+        [(AIRMapMarker *)view setSelected:YES];
     }
 }
 
